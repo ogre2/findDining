@@ -8,43 +8,19 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="/css/bootstrap.min.css" /> <!-- Bootstrap -->
+        <link rel="stylesheet" href="/css/styles.css" /> <!-- Stylesheet -->
 
         <!-- Title & Favicon -->
         <title>findDining &mdash; <%= title %></title>
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" type="image/x-icon" />
+        <link rel="icon" href="/img/android-chrome-192x192.png" type="image/x-icon" />
         <!-- HTML5Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <![endif]-->
-        <style>
-            * {
-                padding: 0;
-                margin: 0;
-                border: 0;
-                box-sizing: border-box;
-                vertical-align: baseline;
-                font-size: 100%;
-                background: transparent;
-            }
-            html,
-            body {
-                height: 100%;
-                width: 100%;
-                background-color: white;
-            }
-            header,
-            section {
-                height: 100%;
-                width: 100%;
-            }
-            header {
-                padding: 100px 0;
-            }
-            section {
-                padding-bottom: 50px;
-            }
-        </style>
     </head>
 
     <body id="page-top" data-spy="scroll">
@@ -59,6 +35,12 @@
             <%- body %>
         </div>
         <!-- /.app -->
+
+        <!-- Footer -->
+        <footer class="main-footer fixed-bottom">
+            <%- include('../includes/footer.ejs') %>
+        </footer>
+        <!-- /.footer -->
 
         <!-- jQuery -->
         <script src="/jquery/jquery.min.js"></script>

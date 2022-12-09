@@ -10,9 +10,8 @@ config.colors.enable()
 exports.getIndex = (req, res) => {
     // TODO GET Root endpoint
     try {
-        res.status(200).json({
-            status: 200,
-            endpoint: '/',
+        res.status(200).render('index', {
+            title: 'Welcome',
             data: {
                 message: 'Hello World'
             }

@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2022-12-09
+
+### Added
+
+- Started the frontend configuration.
+  - Configured ejs as view engine.
+- Created `<client>` subdirectory to house all frontend files and code. Linked in server file.
+  - Created `<views>` subdirectory in the client folder to house all frontend views of app. Linked in server file.
+  - Created `<includes>` subdirectory in the `<client\views>` folder for navigation, footer, and other frontend components.
+  - Created the main frontend layout file, configured with minimal settings to rendered views.
+- Successfully linked frontend dependencies in server file.
+- Successfully rendered restaurants data in the `/api/search` endpoint.
+- Successfully linked root endpoint to search endpoint.
+
 ## [1.0.1] - 2022-12-09
 
 ### Changes
@@ -114,7 +128,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/ogre2/findDining/compare/v01.0.2...v1.0.1
 [1.0.1]: https://github.com/ogre2/findDining/compare/v01.0.1...v1.0.0
 [1.0.0]: https://github.com/ogre2/findDining/compare/v01.0.0...v0.0.9
 [0.0.9]: https://github.com/ogre2/findDining/compare/v0.0.9...v0.0.8

@@ -1,0 +1,20 @@
+<header id="header">
+    <div class="container-fluid d-flex justify-content-center">
+        <h2>Search Page</h2>
+    </div>
+</header>
+
+<section id="results">
+    <div class="container-fluid d-flex justify-content-center" style="position: initial">
+        <div class="row w-100">
+            <% for(let i = 0; i < data.restaurants.length; i++) { %>
+                <div class="card col-sm-4 mb-20">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= data.restaurants[i].r_name %></h5>
+                        <p class="card-text">Cuisine: <%= data.restaurants[i].cuisine %></p>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</section>

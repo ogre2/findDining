@@ -1,4 +1,5 @@
 // Importing config
+const { parse } = require('dotenv')
 const config = require('../config')
 // Importing model
 const Restaurant = require('../models/Restaurant')
@@ -13,14 +14,16 @@ exports.getSearch = (async (req, res) => {
     // TODO GET Search endpoint
     try {
         // Retrieving restaurants from database
-        const allRestaurants = await Restaurant.find().limit(100)
+        const allRestaurants = await Restaurant.find().limit(102)
+        let data = JSON.stringify(allRestaurants)
+        let restaurants = JSON.parse(data)
 
-        res.status(200).json({
+        res.status(200).render('search', {
             status: 200,
-            endpoint: '/api/search',
+            title: 'Search',
             data: {
                 message: 'Search endpoint',
-                restaurants: allRestaurants
+                restaurants
             }
         })
     }

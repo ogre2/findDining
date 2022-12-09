@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.6] - 2022-12-08
+
+### Added
+
+- Procfile for Heroku deployment.
+
+### Changes
+
+- Changed release version badge in README file.
+- Changed repo size badge in README file.
+
 ## [0.0.5] - 2022-12-08
 
 ### Added
@@ -51,7 +62,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v0.0.5...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v0.0.6...HEAD
+[0.0.6]: https://github.com/ogre2/findDining/compare/v0.0.6...v0.0.5
 [0.0.5]: https://github.com/ogre2/findDining/compare/v0.0.5...v0.0.4
 [0.0.4]: https://github.com/ogre2/findDining/compare/v0.0.4...v0.0.3
 [0.0.3]: https://github.com/ogre2/findDining/compare/v0.0.3...v0.0.2

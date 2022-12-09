@@ -50,6 +50,8 @@ app.use('/jquery', express.static(path.resolve(__dirname, '../node_modules/jquer
 app.use('/popper', express.static(path.resolve(__dirname, '../node_modules/@popperjs/core/dist/umd/')))
 // Linking Bootstrap
 app.use(express.static(path.resolve(__dirname, '../node_modules/bootstrap/dist/')))
+// Linking public files
+app.use(express.static(path.resolve(__dirname, '../client/public')))
 
 // Enabling index router
 app.use('/', indexRouter)

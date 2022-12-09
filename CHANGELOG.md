@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2022-12-09
+
+### Added
+
+- Started the frontend Sass styles.
+  - Compiled into centralized .css file.
+- Created footer includes file, added in the layout file.
+- Images and favicons in the public/img folder.
+
+### Changes
+
+- Connected favicon to the main frontend layout file.
+- Removed styles hard coded in the layout file.
+- Connected the dedicated stylesheet.
+- Added link to public files/assets in server file.
+- Added finDining logo in navigation bar.
+
 ## [1.0.4] - 2022-12-09
 
 ### Changes
@@ -142,7 +159,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.4...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.5...HEAD
+[1.0.5]: https://github.com/ogre2/findDining/compare/v01.0.5...v1.0.4
 [1.0.4]: https://github.com/ogre2/findDining/compare/v01.0.4...v1.0.3
 [1.0.3]: https://github.com/ogre2/findDining/compare/v01.0.3...v1.0.2
 [1.0.2]: https://github.com/ogre2/findDining/compare/v01.0.2...v1.0.1

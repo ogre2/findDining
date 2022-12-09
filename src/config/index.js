@@ -4,6 +4,8 @@ const path = require('path')
 const dotenv = require('dotenv')
 // Importing colors
 const colors = require('colors')
+// Importing dbConnect
+const dbConnect = require('./dbConnect.js')
 
 // Configuring dotenv
 dotenv.config({ 
@@ -16,5 +18,6 @@ colors.enable()
 // Exporting configurations
 module.exports = {
     'PORT': process.env.PORT || 5000,
-    colors
+    colors,
+    dbConnect
 }

@@ -9,8 +9,10 @@ const app = express()
 // Creating server
 const server = http.createServer(app)
 
-// Importing index router
+// Importing index
 const indexRouter = require('./routes/index.router')
+// Importing search router
+const searchRouter = require('./routes/search.router') // Search router
 
 // Enabling colors
 config.colors.enable()
@@ -22,11 +24,15 @@ app.set('case sensitive routing', true)
 
 // Enabling index router
 app.use('/', indexRouter)
+// Enabling search router
+app.use('/api', searchRouter)
 
 /**
  * Starting the backend server
  */
 server.listen(config.PORT, () => {
     console.log(`[nodemon] server is running on port: ${config.PORT}`.green)
+    // Connecting to database
+    config.dbConnect.connect()
 })
 

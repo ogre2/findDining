@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2022-12-08
+
+### Added
+
+- Created search router file to manage the ROOT endpoint methods/requests.
+- Created search controller to house all request logic associated with the API index endpoint.
+- Installed mongoose-long to help with Restaurant model data types.
+- Created the restaurant model schema.
+- Successfully connected backend to MongoDB server.
+- Generated restaurant data (provided by MongoDB test data sets).
+  - Successfully loaded restaurants in the `/api/search` endpoint.
+
+### Changes
+
+- Imported database connection code to config index file.
+- Enabled database connection in server file.
+- Enabled search router in the server file.
+
 ## [0.0.9] - 2022-12-08
 
 ### Changes
@@ -88,7 +106,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v0.0.9...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/ogre2/findDining/compare/v01.0.0...v0.0.9
 [0.0.9]: https://github.com/ogre2/findDining/compare/v0.0.9...v0.0.8
 [0.0.8]: https://github.com/ogre2/findDining/compare/v0.0.8...v0.0.7
 [0.0.7]: https://github.com/ogre2/findDining/compare/v0.0.7...v0.0.6

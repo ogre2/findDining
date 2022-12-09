@@ -1,7 +1,7 @@
 # findDining
 
 ![license](https://img.shields.io/static/v1?label=license&message=Apache%202.0&color=informational)
-![release](https://img.shields.io/github/v/tag/ogre2/findDining?label=release)
+<!-- ![release](https://img.shields.io/github/v/tag/ogre2/findDining?label=release) -->
 ![contributors](https://img.shields.io/static/v1?label=contributors&message=1&color=success)
 ![repo size](https://img.shields.io/github/repo-size/ogre2/findDining)
 ![code size](https://img.shields.io/github/languages/code-size/ogre2/findDining?color=red)

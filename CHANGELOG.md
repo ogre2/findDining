@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.8] - 2022-12-08
+
+### Changes
+
+- Corrected links to latest two releases and linked compare to HEAD.
+
 ## [0.0.7] - 2022-12-08
 
 ### Added
@@ -76,7 +82,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v0.0.6...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v0.0.8...HEAD
+[0.0.8]: https://github.com/ogre2/findDining/compare/v0.0.8...v0.0.7
+[0.0.7]: https://github.com/ogre2/findDining/compare/v0.0.7...v0.0.6
 [0.0.6]: https://github.com/ogre2/findDining/compare/v0.0.6...v0.0.5
 [0.0.5]: https://github.com/ogre2/findDining/compare/v0.0.5...v0.0.4
 [0.0.4]: https://github.com/ogre2/findDining/compare/v0.0.4...v0.0.3

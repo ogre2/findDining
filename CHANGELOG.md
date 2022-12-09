@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4] - 2022-12-08
+
+### Added
+
+- Added `<src>` subdirectory to house all backend code for the API.
+- Created a server file in the `<src>` subdirectory with a basic express server build to test that the server setup is working.
+
 ## [0.0.3] - 2022-12-08
 
 ### Changes
@@ -31,6 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v0.0.2...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v0.0.4...HEAD
+[0.0.4]: https://github.com/ogre2/findDining/compare/v0.0.4...v0.0.3
+[0.0.3]: https://github.com/ogre2/findDining/compare/v0.0.3...v0.0.2
 [0.0.2]: https://github.com/ogre2/findDining/compare/v0.0.2...v0.0.1
 [0.0.1]: https://github.com/ogre2/findDining/releases/tag/v0.0.1

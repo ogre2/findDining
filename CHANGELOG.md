@@ -7,7 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.0] - 2022-12-08
+## [1.0.1] - 2022-12-09
+
+### Changes
+
+- Fixed release 1.0.0 date.
+- Added restaurants results limit to 100 in the search controller.
+  - Temporary fix to help with loading issues when deployed to Heroku.
+
+## [1.0.0] - 2022-12-09
 
 ### Added
 
@@ -106,7 +114,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/ogre2/findDining/compare/v01.0.1...v1.0.0
 [1.0.0]: https://github.com/ogre2/findDining/compare/v01.0.0...v0.0.9
 [0.0.9]: https://github.com/ogre2/findDining/compare/v0.0.9...v0.0.8
 [0.0.8]: https://github.com/ogre2/findDining/compare/v0.0.8...v0.0.7

@@ -13,7 +13,7 @@ exports.getSearch = (async (req, res) => {
     // TODO GET Search endpoint
     try {
         // Retrieving restaurants from database
-        const allRestaurants = await Restaurant.find()
+        const allRestaurants = await Restaurant.find().limit(100)
 
         res.status(200).json({
             status: 200,

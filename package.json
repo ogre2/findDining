@@ -4,7 +4,7 @@
   "description": "findDining is a fullstack web application that lets users find restaurants and food spots near them based on simple search criterieas.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",

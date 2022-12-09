@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.5] - 2022-12-08
+
+### Added
+
+- Added dedicated backend environment variable configurations subdirector (`<src/config>`).
+  - Imported configuration file in the `server` file.
+- Configured port variable to use for server.
+
+### Changes
+
+- Imported and utilized custom port variable in `server` file.
+- Modified script in `<package.json>` file to run nodemon with server file.
+
 ## [0.0.4] - 2022-12-08
 
 ### Added
@@ -38,7 +51,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v0.0.4...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v0.0.5...HEAD
+[0.0.5]: https://github.com/ogre2/findDining/compare/v0.0.5...v0.0.4
 [0.0.4]: https://github.com/ogre2/findDining/compare/v0.0.4...v0.0.3
 [0.0.3]: https://github.com/ogre2/findDining/compare/v0.0.3...v0.0.2
 [0.0.2]: https://github.com/ogre2/findDining/compare/v0.0.2...v0.0.1

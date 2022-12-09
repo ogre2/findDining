@@ -1,0 +1,39 @@
+{
+  "name": "finddining",
+  "version": "1.0.0",
+  "description": "findDining is a fullstack web application that lets users find restaurants and food spots near them based on simple search criterieas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogre2/findDining.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ogre2/findDining/issues"
+  },
+  "homepage": "https://github.com/ogre2/findDining#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.2.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "helmet": "^6.0.1",
+    "jquery": "^3.6.1",
+    "mongoose": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.7] - 2022-12-08
+
+### Added
+
+- Created dedicated routes subdirectory within `<src>` to house API router code.
+- Created dedicated controller subdirectory within `<src>` to house API router controller code.
+- Created index router file to manage the ROOT endpoint methods/requests.
+- Created index controller to house all request logic associated with the API index endpoint.
+
+### Changes
+
+- Moved root API endpoint code to dedicated index router file.
+- Enabled case sensitive routing in the server.
+
 ## [0.0.6] - 2022-12-08
 
 ### Added

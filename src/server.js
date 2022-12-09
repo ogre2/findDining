@@ -9,26 +9,19 @@ const app = express()
 // Creating server
 const server = http.createServer(app)
 
+// Importing index router
+const indexRouter = require('./routes/index.router')
+
 // Enabling colors
 config.colors.enable()
 
 // Enabling json spaces for better JSON data rendering
 app.set('json spaces', 2)
+// Enabling case sensitive routing
+app.set('case sensitive routing', true)
 
-// Hello world on ROOT endpoint
-app.get('/', (req, res) => {
-    // TODO GET root endpoint
-    try {
-        res.status(200).json({
-            status: 200,
-            message: 'Hello World'
-        })
-    }
-    // Catch error
-    catch(err) {
-        throw err
-    }
-})
+// Enabling index router
+app.use('/', indexRouter)
 
 /**
  * Starting the backend server

@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------
+[9. Navigation]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Navbar]
+------------------------------------------------------------------*/
+.navbar {
+    // height: 100px;
+    background-color: $c-white;
+    .navbar-brand {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        color: $c-ultrablue;
+        .navbar-brand-img {
+            margin-right: 5px;
+        }
+    }
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                &:not(:first-child) {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}

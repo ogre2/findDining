@@ -1,0 +1,57 @@
+/*------------------------------------------------------------------
+[11. Index Page]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Header]
+------------------------------------------------------------------*/
+#indexHeader {
+    height: 100vh;
+    width: 100%;
+}
+
+#features {
+    background-color: $c-off-white;
+    .section-content {
+        .card {
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid $c-grey;
+            .card-body {
+                .card-body-icon {
+                    height: 80px;
+                    width: 80px;
+                    font-size: 26px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $c-alice;
+                    margin-bottom: 20px;
+                    color: $c-ultrablue;
+                }
+                .card-title {
+                    margin-bottom: 15px;
+                    font-weight: 600;
+                    color: $c-charcoal;
+                }
+                .card-text {
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: $c-manatee;
+                }
+                .card-link {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: $c-ultrablue;
+                }
+            }
+            &:hover {
+                // cursor: pointer;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.025);
+            }
+        }
+    }
+}

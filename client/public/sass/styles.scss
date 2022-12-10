@@ -11,14 +11,23 @@ Primary use:    API
 [Table of contents]
 1. Variables
 2. Mixins
-4. Functions
-5. Resets
-6. Body
+3. Functions
+4. Resets
+5. Body
+6. Keyframes
 7. Typography
 8. Buttons
 9. Navigation
+10. Footer
+11. Index page
 ------------------------------------------------------------------*/
 @import '1-helpers/variables';
 @import '1-helpers/mixins';
+@import '1-helpers/functions';
 @import '2-base/resets';
 @import '2-base/body';
+@import '2-base/typography';
+@import '2-base/buttons';
+@import '3-layout/navbar';
+@import '3-layout/footer';
+@import '4-pages/index';

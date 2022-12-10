@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.6] - 2022-12-09
+
+### Added
+
+- Added content to index page.
+  - Experimenting with Bootstrap column layouts.
+- Added custom functions to handle margins and padding css code generation.
+- Added custom index page code.
+
+### Changes
+
+- Reorganized sass files.
+
 ## [1.0.5] - 2022-12-09
 
 ### Added
@@ -159,8 +172,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.5...HEAD
-[1.0.5]: https://github.com/ogre2/findDining/compare/v01.0.5...v1.0.4
+[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.56...HEAD
+[1.0.6]: https://github.com/ogre2/findDining/compare/v01.0.6...v1.0.45
 [1.0.4]: https://github.com/ogre2/findDining/compare/v01.0.4...v1.0.3
 [1.0.3]: https://github.com/ogre2/findDining/compare/v01.0.3...v1.0.2
 [1.0.2]: https://github.com/ogre2/findDining/compare/v01.0.2...v1.0.1

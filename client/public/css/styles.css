@@ -10,12 +10,12 @@ Primary use:    API
 [Table of contents]
 1. Variables
 2. Mixins
-3. Functions
-4. Resets
-5. Body
-6. Keyframes
-7. Typography
-8. Buttons
+3. Resets
+4. Body
+5. Keyframes
+6. Typography
+7. Buttons
+8. Functions
 9. Navigation
 10. Footer
 11. Index page
@@ -27,6 +27,9 @@ Primary use:    API
 /*------------------------------------------------------------------
 [Colors]
 ------------------------------------------------------------------*/
+/** Colors -- HEX **/
+/** Colors -- HSL **/
+/** Gradients **/
 /*------------------------------------------------------------------
 [2. Mixins]
 ------------------------------------------------------------------*/
@@ -43,7 +46,299 @@ Primary use:    API
 [Object Fit]
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
-[3. Functions]
+[3. Resets]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[*]
+------------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-size: 100%;
+  background: transparent;
+  transition: all ease-in-out 0.15s;
+}
+
+/*------------------------------------------------------------------
+[Scrollbar]
+------------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #EDEDED;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #377DFF;
+}
+
+/*------------------------------------------------------------------
+[:root]
+------------------------------------------------------------------*/
+:root {
+  /** Colors -- HEX **/
+  --c-white: #FFFFFF;
+  --c-off-white: #FAFBFC;
+  --c-grey: #EDEDED;
+  --c-alice: #E5F1FF;
+  --c-cement: #b2b2b2;
+  --c-manatee: #99A2B2;
+  --c-silver: #7D8696;
+  --c-charcoal: #323B4B;
+  --c-ultrablue: #377DFF;
+  --c-yellow: #FFE01B;
+  --c-yellow2: #FEC601;
+  --c-black: #000000;
+  --c-rich-black: #071013ff;
+  /** Colors -- HSL **/
+  --rich-black-fogra-29: hsla(195, 46%, 5%, 1);
+  --ultramarine-blue: hsla(216, 100%, 50%, 1);
+  --tuscany: hsla(354, 17%, 66%, 1);
+  --charcoal: hsla(218, 20%, 25%, 1);
+  --alice-blue: hsla(212, 100%, 95%, 1);
+  /** Gradients **/
+  --gradient-top: linear-gradient(0deg, #071013ff, #0066ffff, #b7999cff, #323b4bff, #e5f1ffff);
+  --gradient-right: linear-gradient(90deg, #071013ff, #0066ffff, #b7999cff, #323b4bff, #e5f1ffff);
+  --gradient-bottom: linear-gradient(180deg, #071013ff, #0066ffff, #b7999cff, #323b4bff, #e5f1ffff);
+  --gradient-left: linear-gradient(270deg, #071013ff, #0066ffff, #b7999cff, #323b4bff, #e5f1ffff);
+  --gradient-top-right: linear-gradient(45deg, #071013ff, #0066ffff, #b7999cff, #323b4bff, #e5f1ffff);
+  --gradient-bottom-right: linear-gradient(135deg, #071013ff, #0066ffff, #b7999cff, #323b4bff, #e5f1ffff);
+  --gradient-top-left: linear-gradient(225deg, #071013ff, #0066ffff, #b7999cff, #323b4bff, #e5f1ffff);
+  --gradient-bottom-left: linear-gradient(315deg, #071013ff, #0066ffff, #b7999cff, #323b4bff, #e5f1ffff);
+  --gradient-radial: radial-gradient(#071013ff, #0066ffff, #b7999cff, #323b4bff, #e5f1ffff);
+}
+
+/*------------------------------------------------------------------
+[4. Body]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[HTML/Body]
+------------------------------------------------------------------*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+}
+
+/*------------------------------------------------------------------
+[Areas]
+------------------------------------------------------------------*/
+header,
+section,
+footer,
+div {
+  margin: 0;
+}
+
+section,
+footer {
+  padding: 100px 0;
+  min-height: 200px;
+}
+
+footer {
+  vertical-align: bottom;
+}
+
+/*------------------------------------------------------------------
+[Links]
+------------------------------------------------------------------*/
+a {
+  text-decoration: none;
+}
+
+a.link {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------------
+[Span]
+------------------------------------------------------------------*/
+span {
+  display: inline-block;
+}
+
+/*------------------------------------------------------------------
+[6. Typography]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Headings]
+------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 62px;
+}
+
+h5 {
+  font-size: 27px;
+}
+
+/*------------------------------------------------------------------
+[Paragraphs]
+------------------------------------------------------------------*/
+p {
+  line-height: 36px;
+}
+
+.p-header, .p-section-header {
+  font-size: 20px;
+}
+
+.p-section-header {
+  color: #99A2B2;
+}
+
+/*------------------------------------------------------------------
+[Lists]
+------------------------------------------------------------------*/
+ul,
+ol {
+  list-style-type: none;
+}
+
+ul li,
+ol li {
+  display: inline;
+}
+
+/*------------------------------------------------------------------
+[Font Weights]
+------------------------------------------------------------------*/
+.fw-thing {
+  font-weight: 100 !important;
+}
+
+.fw-ex-light {
+  font-weight: 200 !important;
+}
+
+.fw-light {
+  font-weight: 300 !important;
+}
+
+.fw-regular {
+  font-weight: 400 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-sm-bold {
+  font-weight: 600 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fw-ex-bold {
+  font-weight: 800 !important;
+}
+
+.fw-black {
+  font-weight: 900 !important;
+}
+
+/*------------------------------------------------------------------
+[Text Colors]
+------------------------------------------------------------------*/
+.text-charcoal {
+  color: #323B4B;
+}
+
+.text-manatee {
+  color: #99A2B2;
+}
+
+/*------------------------------------------------------------------
+[7. Buttons]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Button]
+------------------------------------------------------------------*/
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------
+[.btn]
+------------------------------------------------------------------*/
+.btn {
+  padding: 16px 40px;
+  border: 0px;
+  outline: none !important;
+  font-weight: 600;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn:visited {
+  outline: none !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  color: #FFFFFF;
+  background-color: #377DFF !important;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+  color: #377DFF;
+  background-color: #E5F1FF !important;
+}
+
+.btn-alternate,
+.btn-alternate:hover,
+.btn-alternate:active,
+.btn-alternate:visited,
+.btn-alternate:focus {
+  color: #377DFF;
+  background-color: #FFFFFF;
+}
+
+/*------------------------------------------------------------------
+[8. Functions]
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [Margins & Padding]
@@ -721,236 +1016,94 @@ Primary use:    API
 }
 
 /*------------------------------------------------------------------
-[5. Resets]
+[Height & Width]
 ------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[*]
-------------------------------------------------------------------*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-  vertical-align: baseline;
-  font-size: 100%;
-  background: transparent;
-  transition: all ease-in-out 0.15s;
+.h-0 {
+  height: 0% !important;
 }
 
-/*------------------------------------------------------------------
-[Scrollbar]
-------------------------------------------------------------------*/
-::-webkit-scrollbar {
-  width: 12px;
+.w-0 {
+  width: 0% !important;
 }
 
-::-webkit-scrollbar-track {
-  background-color: #EDEDED;
+.h-10 {
+  height: 10% !important;
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  background-color: #377DFF;
+.w-10 {
+  width: 10% !important;
 }
 
-/*------------------------------------------------------------------
-[5. Body]
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[HTML/Body]
-------------------------------------------------------------------*/
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Inter', sans-serif;
-  background-color: #FFFFFF;
+.h-20 {
+  height: 20% !important;
 }
 
-/*------------------------------------------------------------------
-[Areas]
-------------------------------------------------------------------*/
-header,
-section,
-footer,
-div {
-  margin: 0;
+.w-20 {
+  width: 20% !important;
 }
 
-section,
-footer {
-  padding: 100px 0;
-  min-height: 200px;
+.h-30 {
+  height: 30% !important;
 }
 
-footer {
-  vertical-align: bottom;
+.w-30 {
+  width: 30% !important;
 }
 
-/*------------------------------------------------------------------
-[Links]
-------------------------------------------------------------------*/
-a {
-  text-decoration: none;
+.h-40 {
+  height: 40% !important;
 }
 
-/*------------------------------------------------------------------
-[7. Typography]
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Headings]
-------------------------------------------------------------------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
+.w-40 {
+  width: 40% !important;
 }
 
-h1 {
-  font-size: 80px;
+.h-50 {
+  height: 50% !important;
 }
 
-h2 {
-  font-size: 62px;
+.w-50 {
+  width: 50% !important;
 }
 
-h5 {
-  font-size: 27px;
+.h-60 {
+  height: 60% !important;
 }
 
-/*------------------------------------------------------------------
-[Paragraphs]
-------------------------------------------------------------------*/
-p {
-  line-height: 36px;
+.w-60 {
+  width: 60% !important;
 }
 
-.p-header, .p-section-header {
-  font-size: 20px;
+.h-70 {
+  height: 70% !important;
 }
 
-.p-section-header {
-  color: #99A2B2;
+.w-70 {
+  width: 70% !important;
 }
 
-/*------------------------------------------------------------------
-[Lists]
-------------------------------------------------------------------*/
-ul,
-ol {
-  list-style-type: none;
+.h-80 {
+  height: 80% !important;
 }
 
-ul li,
-ol li {
-  display: inline;
+.w-80 {
+  width: 80% !important;
 }
 
-/*------------------------------------------------------------------
-[Font Weights]
-------------------------------------------------------------------*/
-.fw-thing {
-  font-weight: 100 !important;
+.h-90 {
+  height: 90% !important;
 }
 
-.fw-ex-light {
-  font-weight: 200 !important;
+.w-90 {
+  width: 90% !important;
 }
 
-.fw-light {
-  font-weight: 300 !important;
+.h-100 {
+  height: 100% !important;
 }
 
-.fw-regular {
-  font-weight: 400 !important;
-}
-
-.fw-medium {
-  font-weight: 500 !important;
-}
-
-.fw-sm-bold {
-  font-weight: 600 !important;
-}
-
-.fw-bold {
-  font-weight: 700 !important;
-}
-
-.fw-ex-bold {
-  font-weight: 800 !important;
-}
-
-.fw-black {
-  font-weight: 900 !important;
-}
-
-/*------------------------------------------------------------------
-[Text Colors]
-------------------------------------------------------------------*/
-.text-charcoal {
-  color: #323B4B;
-}
-
-.text-manatee {
-  color: #99A2B2;
-}
-
-/*------------------------------------------------------------------
-[8. Buttons]
-------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Button]
-------------------------------------------------------------------*/
-button {
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-}
-
-/*------------------------------------------------------------------
-[.btn]
-------------------------------------------------------------------*/
-.btn {
-  padding: 16px 40px;
-  border: 0px;
-  outline: none !important;
-  font-weight: 600;
-}
-
-.btn:hover, .btn:focus, .btn:active, .btn:visited {
-  outline: none !important;
-}
-
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:visited,
-.btn-primary:focus {
-  color: #FFFFFF;
-  background-color: #377DFF !important;
-}
-
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:active,
-.btn-secondary:visited,
-.btn-secondary:focus {
-  color: #377DFF;
-  background-color: #E5F1FF !important;
-}
-
-.btn-alternate,
-.btn-alternate:hover,
-.btn-alternate:active,
-.btn-alternate:visited,
-.btn-alternate:focus {
-  color: #377DFF;
-  background-color: #FFFFFF;
+.w-100 {
+  width: 100% !important;
 }
 
 /*------------------------------------------------------------------

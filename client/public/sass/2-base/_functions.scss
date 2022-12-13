@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------
-[3. Functions]
+[8. Functions]
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [Margins & Padding]
@@ -14,6 +14,25 @@ $sides: (top, bottom, left, right);
         }
         .p-#{str-slice($side, 0, 1)}-#{$space} {
             padding-#{$side}: #{$space}px;
+        }
+    }
+}
+/*------------------------------------------------------------------
+[Height & Width]
+------------------------------------------------------------------*/
+$sizes: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+$height: height;
+$width: width;
+
+@each $size in $sizes {
+    @each $height in $height {
+        .h-#{$size} {
+            height: percentage($size/100) !important;
+        }
+    }
+    @each $width in $width {
+        .w-#{$size} {
+            width: percentage($size/100) !important;
         }
     }
 }

@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed footer layout.
 - Added margins to footer.
 - Added new color to variables file in the sass directory.
+- Fixed CHANGE log release links.
 
 ## [1.0.6] - 2022-12-09
 

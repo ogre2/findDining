@@ -7,11 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.9] - 2022-13-11
+
+### Changes
+
+- Fixed typo under [1.0.8] changes.
+
 ## [1.0.8] - 2022-13-11
 
 ### Changes
 
-- Removed uncessary files (null.json, restaurants.json, reviews.json).
+- Removed unnecessary files (null.json, restaurants.json, reviews.json).
 - Added anchor and span tag targets in `_body.scss` file.
 - Reformated order of .scss files.
 - Added function to handle heights and widths in `_functionss.css` file.
@@ -199,7 +205,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.8...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.9...HEAD
+[1.0.9]: https://github.com/ogre2/findDining/compare/v01.0.9...v1.0.8
 [1.0.8]: https://github.com/ogre2/findDining/compare/v01.0.8...v1.0.7
 [1.0.7]: https://github.com/ogre2/findDining/compare/v01.0.7...v1.0.6
 [1.0.6]: https://github.com/ogre2/findDining/compare/v01.0.6...v1.0.5

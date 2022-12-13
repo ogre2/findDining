@@ -7,5 +7,54 @@
 footer {
     &.main-footer {
         margin-top: auto;
+        .row {
+            &:not(:last-child) {
+                margin-bottom: 20px !important;
+            }
+            .footer-brand {
+                font-size: 24px;
+                font-weight: 700;
+                letter-spacing: -0.5px;
+                color: $c-ultrablue;
+                align-self: center;
+                justify-self: center;
+                .footer-brand-img {
+                    width: 40px;
+                    height: auto;
+                    margin-right: 5px;
+                }
+            }
+            .footer-links {
+                .footer-link-item {
+                    &:not(:last-child) {
+                        margin-right: 30px;
+                    }
+                    .footer-link {
+                        color: $c-cement;
+                        font-size: 18px;
+                        font-weight: 600;
+                        &:hover,
+                        &:focus {
+                            color: $c-ultrablue;
+                        }
+                    }
+                }
+            }
+            .footer-text {
+                margin-top: -10px !important; 
+            }
+        }
+        .cta-area {
+            margin-bottom: 50px;
+            .cta {
+                height: 200px;
+                color: $c-white;
+                background-color: $c-ultrablue;
+                border-radius: 20px;
+                .cta-text {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 }

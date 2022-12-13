@@ -1,20 +1,159 @@
-<header id="header">
-    <div class="container-fluid d-flex justify-content-center">
-        <h2>Search Page</h2>
+<header id="searchHeader" class="d-flex justify-content-center align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+        <div class="jumbotron text-center">
+            <h2>Search Page</h2>
+        </div>
     </div>
 </header>
 
-<section id="results">
-    <div class="container-fluid d-flex justify-content-center" style="position: initial">
-        <div class="row w-100">
+<!-- Search Results -->
+<section id="searchResults">
+    <div class="container-fluid m-auto" style="position: initial">
+        <div class="results d-flex flex-wrap justify-content-between">
             <% for(let i = 0; i < data.restaurants.length; i++) { %>
-                <div class="card col-sm-4 mb-20">
-                    <div class="card-body">
-                        <h5 class="card-title"><%= data.restaurants[i].r_name %></h5>
-                        <p class="card-text">Cuisine: <%= data.restaurants[i].cuisine %></p>
+                <div class="card col-md-3">
+                    <div class="card-row">
+                        <div class="card-head">
+                            <div class="card-image">
+                                <img src="/img/250.png" alt="" class="r-logo">
+                            </div>
+                            <div class="card-head-text">
+                                <h5 class="card-title"><%= data.restaurants[i].r_name %></h5>
+                                <h6 class="card-subtitle"><%= data.restaurants[i].cuisine %></h6>
+                            </div>
+                        </div>
+                        <a href="" class="card-link"><i class="fa-solid fa-location-dot fa-fw card-icon"></i></a>
+                    </div>
+
+                    <div class="card-row">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum veniam iusto sunt obcaecati reiciendis ex?</p>
                     </div>
                 </div>
             <% } %>
         </div>
     </div>
 </section>
+<!-- /.search-results -->
+
+<!-- Testimonials -->
+<section id="testimonials">
+    <div class="container-fluid">
+        <!-- Section Header -->
+        <div class="row section-header ms-auto me-auto text-center d-flex flex-column align-items-center w-100 m-b-100">
+            <h2 class="col-md-4 fw-bold text-charcoal m-b-25">Hear from our users</h2>
+
+            <p class="col-md-5 fw-medium p-section-header text-silver">
+                Your feedback is very useful to  us, as we continue to improve the service we rely on your reviews to provide a better product. 
+            </p>
+        </div>
+        <!-- /.section-header -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide testimonials-area" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row carousel-item-row d-flex justify-content-center text-center">
+                        <% for(let i = 0; i < 3; i++) { %>
+                            <div class="col-md-4">
+                                <div class="card testimonial-card">
+                                    <div class="card-head">
+                                        <img src="<%= data.reviews[i].img%>" alt="Profile picture" class="card-avi">
+                                        <h5 class="card-title"><%= data.reviews[i].name %></h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text"><%= data.reviews[i].review %></p>
+
+                                        <% if(data.reviews[i].rating == 4) { %>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                        <% } else if (data.reviews[i].rating == 5) { %>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="row carousel-item-row d-flex justify-content-center text-center">
+                        <% for(let i = 3; i < 6; i++) { %>
+                            <div class="col-md-4">
+                                <div class="card testimonial-card">
+                                    <div class="card-head">
+                                        <img src="<%= data.reviews[i].img%>" alt="Profile picture" class="card-avi">
+                                        <h5 class="card-title"><%= data.reviews[i].name %></h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text"><%= data.reviews[i].review %></p>
+
+                                        <% if(data.reviews[i].rating == 4) { %>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                        <% } else if (data.reviews[i].rating == 5) { %>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <div class="row carousel-item-row d-flex justify-content-center text-center">
+                        <% for(let i = 6; i < 9; i++) { %>
+                            <div class="col-md-4">
+                                <div class="card testimonial-card">
+                                    <div class="card-head">
+                                        <img src="<%= data.reviews[i].img%>" alt="Profile picture" class="card-avi">
+                                        <h5 class="card-title"><%= data.reviews[i].name %></h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text"><%= data.reviews[i].review %></p>
+
+                                        <% if(data.reviews[i].rating == 4) { %>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                        <% } else if (data.reviews[i].rating == 5) { %>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                            <i class="fa-solid fa-fw fa-star card-star"></i>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</section>
+<!-- /.testimonials  -->

@@ -2,5 +2,49 @@
 [8. Buttons]
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
-[]
+[Button]
 ------------------------------------------------------------------*/
+button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+/*------------------------------------------------------------------
+[.btn]
+------------------------------------------------------------------*/
+.btn {
+    padding: 16px 40px;
+    border: 0px;
+    outline: none !important;
+    font-weight: 600;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        outline: none !important;
+    }
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    color: $c-white;
+    background-color: $c-ultrablue !important;
+}
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+    color: $c-ultrablue;
+    background-color: $c-alice !important;
+}
+.btn-alternate,
+.btn-alternate:hover,
+.btn-alternate:active,
+.btn-alternate:visited,
+.btn-alternate:focus {
+    color: $c-ultrablue;
+    background-color: $c-white;
+}

@@ -19,6 +19,7 @@ Primary use:    API
 9. Navigation
 10. Footer
 11. Index page
+12. Search page
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [1. Variables]
@@ -787,6 +788,13 @@ footer {
 }
 
 /*------------------------------------------------------------------
+[Links]
+------------------------------------------------------------------*/
+a {
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------------
 [7. Typography]
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -818,11 +826,15 @@ h5 {
 [Paragraphs]
 ------------------------------------------------------------------*/
 p {
-  line-height: 32px;
+  line-height: 36px;
 }
 
-.p-header {
+.p-header, .p-section-header {
   font-size: 20px;
+}
+
+.p-section-header {
+  color: #99A2B2;
 }
 
 /*------------------------------------------------------------------
@@ -892,8 +904,55 @@ ol li {
 [8. Buttons]
 ------------------------------------------------------------------*/
 /*------------------------------------------------------------------
-[]
+[Button]
 ------------------------------------------------------------------*/
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+/*------------------------------------------------------------------
+[.btn]
+------------------------------------------------------------------*/
+.btn {
+  padding: 16px 40px;
+  border: 0px;
+  outline: none !important;
+  font-weight: 600;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn:visited {
+  outline: none !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  color: #FFFFFF;
+  background-color: #377DFF !important;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+  color: #377DFF;
+  background-color: #E5F1FF !important;
+}
+
+.btn-alternate,
+.btn-alternate:hover,
+.btn-alternate:active,
+.btn-alternate:visited,
+.btn-alternate:focus {
+  color: #377DFF;
+  background-color: #FFFFFF;
+}
+
 /*------------------------------------------------------------------
 [9. Navigation]
 ------------------------------------------------------------------*/
@@ -901,6 +960,8 @@ ol li {
 [Navbar]
 ------------------------------------------------------------------*/
 .navbar {
+  height: 100px;
+  line-height: 100px;
   background-color: #FFFFFF;
 }
 
@@ -937,6 +998,58 @@ footer.main-footer {
   margin-top: auto;
 }
 
+footer.main-footer .row:not(:last-child) {
+  margin-bottom: 20px !important;
+}
+
+footer.main-footer .row .footer-brand {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #377DFF;
+  align-self: center;
+  justify-self: center;
+}
+
+footer.main-footer .row .footer-brand .footer-brand-img {
+  width: 40px;
+  height: auto;
+  margin-right: 5px;
+}
+
+footer.main-footer .row .footer-links .footer-link-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+footer.main-footer .row .footer-links .footer-link-item .footer-link {
+  color: #b2b2b2;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer.main-footer .row .footer-links .footer-link-item .footer-link:hover, footer.main-footer .row .footer-links .footer-link-item .footer-link:focus {
+  color: #377DFF;
+}
+
+footer.main-footer .row .footer-text {
+  margin-top: -10px !important;
+}
+
+footer.main-footer .cta-area {
+  margin-bottom: 50px;
+}
+
+footer.main-footer .cta-area .cta {
+  height: 200px;
+  color: #FFFFFF;
+  background-color: #377DFF;
+  border-radius: 20px;
+}
+
+footer.main-footer .cta-area .cta .cta-text {
+  margin-bottom: 20px;
+}
+
 /*------------------------------------------------------------------
 [11. Index Page]
 ------------------------------------------------------------------*/
@@ -948,6 +1061,9 @@ footer.main-footer {
   width: 100%;
 }
 
+/*------------------------------------------------------------------
+[Features]
+------------------------------------------------------------------*/
 #features {
   background-color: #FAFBFC;
 }
@@ -994,5 +1110,221 @@ footer.main-footer {
 
 #features .section-content .card:hover {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.025);
+}
+
+/*------------------------------------------------------------------
+[Encryption]
+------------------------------------------------------------------*/
+#encryption {
+  background-color: #FAFBFC;
+}
+
+#encryption .container-fluid .encryption-cards .card {
+  padding: 20px;
+  width: 325px;
+  border: 1px solid #EDEDED;
+}
+
+#encryption .container-fluid .encryption-cards .card .card-icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #377DFF;
+  background-color: #E5F1FF;
+  margin-bottom: 10px;
+}
+
+#encryption .container-fluid .encryption-cards .card .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #323B4B;
+}
+
+#encryption .container-fluid .encryption-cards .card .card-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#encryption .container-fluid .encryption-cards .card:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/*------------------------------------------------------------------
+[Google Maps]
+------------------------------------------------------------------*/
+#googleMaps .container-fluid .row .details {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+#googleMaps .container-fluid .row .details .details-icon {
+  height: 80px;
+  width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #377DFF;
+  font-size: 26px;
+  background-color: #E5F1FF;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+#googleMaps .container-fluid .row .details .details-text {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#googleMaps .container-fluid .row .details .details-text .details-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #323B4B;
+}
+
+#googleMaps .container-fluid .row .details .details-text .details-small {
+  font-size: 16px;
+  font-weight: 500;
+  color: #99A2B2;
+}
+
+/*------------------------------------------------------------------
+[Testimonials]
+------------------------------------------------------------------*/
+#testimonials {
+  background-color: #FAFBFC;
+}
+
+#testimonials .container-fluid .testimonials-area .carousel-inner .carousel-item {
+  padding: 0 100px 0 210px;
+}
+
+#testimonials .container-fluid .testimonials-area .carousel-inner .carousel-item .carousel-item-row {
+  padding: 20px 0;
+}
+
+#testimonials .container-fluid .testimonials-area .carousel-inner .carousel-item .carousel-item-row .testimonial-card {
+  width: 400px;
+  padding: 25px 10px;
+  border: 1px solid #EDEDED;
+}
+
+#testimonials .container-fluid .testimonials-area .carousel-inner .carousel-item .carousel-item-row .testimonial-card .card-head .card-avi {
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#testimonials .container-fluid .testimonials-area .carousel-inner .carousel-item .carousel-item-row .testimonial-card .card-head .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #323B4B;
+}
+
+#testimonials .container-fluid .testimonials-area .carousel-inner .carousel-item .carousel-item-row .testimonial-card .card-body .card-star {
+  color: #FEC601;
+}
+
+#testimonials .container-fluid .testimonials-area .carousel-inner .carousel-item .carousel-item-row .testimonial-card:hover {
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*------------------------------------------------------------------
+[12. Search Page]
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Header]
+------------------------------------------------------------------*/
+#searchHeader {
+  min-height: 40vh;
+  width: 100%;
+  padding: 50 0;
+  background-color: #FAFBFC;
+}
+
+#searchHeader .container-fluid {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+#searchHeader .container-fluid .jumbotron {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+/*------------------------------------------------------------------
+[Search Results]
+------------------------------------------------------------------*/
+#searchResults .results {
+  height: 100%;
+  width: 100%;
+}
+
+#searchResults .results .card {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+}
+
+#searchResults .results .card .card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#searchResults .results .card .card-row .card-head {
+  display: flex;
+  align-items: center;
+}
+
+#searchResults .results .card .card-row .card-head .card-image {
+  height: 80px;
+  width: 80px;
+  margin-right: 5px;
+}
+
+#searchResults .results .card .card-row .card-head .card-image .r-logo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+#searchResults .results .card .card-row .card-head .card-head-text .card-title {
+  color: #323B4B;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#searchResults .results .card .card-row .card-head .card-head-text .card-subtitle {
+  color: #99A2B2;
+  font-weight: 500;
+}
+
+#searchResults .results .card .card-row .card-link {
+  background-color: #377DFF;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+#searchResults .results .card .card-row .card-link .card-icon {
+  font-size: 18px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=styles.css.map */

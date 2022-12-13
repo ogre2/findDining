@@ -20,6 +20,7 @@ Primary use:    API
 9. Navigation
 10. Footer
 11. Index page
+12. Search page
 ------------------------------------------------------------------*/
 @import '1-helpers/variables';
 @import '1-helpers/mixins';
@@ -31,3 +32,4 @@ Primary use:    API
 @import '3-layout/navbar';
 @import '3-layout/footer';
 @import '4-pages/index';
+@import '4-pages/search';

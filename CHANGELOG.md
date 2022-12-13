@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 2022-13-11
+
+### Added
+
+- Completed index page design/layout and content added.
+- Added branding and links to footer.
+  - Added CTA area in footer.
+- Created model for user testimonials/reviews.
+  - Imported reviews in index and search page.
+- Added necessary images for testimonials/reviews area.
+
+### Changes
+
+- Fixed footer layout.
+- Added margins to footer.
+- Added new color to variables file in the sass directory.
+
 ## [1.0.6] - 2022-12-09
 
 ### Added
@@ -172,8 +189,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.56...HEAD
-[1.0.6]: https://github.com/ogre2/findDining/compare/v01.0.6...v1.0.45
+[Unreleased]: https://github.com/ogre2/findDining/compare/v1.0.7...HEAD
+[1.0.7]: https://github.com/ogre2/findDining/compare/v01.0.7...v1.0.6
+[1.0.6]: https://github.com/ogre2/findDining/compare/v01.0.6...v1.0.5
 [1.0.4]: https://github.com/ogre2/findDining/compare/v01.0.4...v1.0.3
 [1.0.3]: https://github.com/ogre2/findDining/compare/v01.0.3...v1.0.2
 [1.0.2]: https://github.com/ogre2/findDining/compare/v01.0.2...v1.0.1

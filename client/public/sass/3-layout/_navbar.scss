@@ -5,7 +5,8 @@
 [Navbar]
 ------------------------------------------------------------------*/
 .navbar {
-    // height: 100px;
+    height: 100px;
+    line-height: 100px;
     background-color: $c-white;
     .navbar-brand {
         display: flex;

@@ -3,6 +3,7 @@ const { parse } = require('dotenv')
 const config = require('../config')
 // Importing model
 const Restaurant = require('../models/Restaurant')
+const Review = require('../models/Review')
 
 // Enabling colors
 config.colors.enable()
@@ -15,15 +16,16 @@ exports.getSearch = (async (req, res) => {
     try {
         // Retrieving restaurants from database
         const allRestaurants = await Restaurant.find().limit(102)
-        let data = JSON.stringify(allRestaurants)
-        let restaurants = JSON.parse(data)
+        // Retrieving reviews from database
+        const allReviews = await Review.find()
 
         res.status(200).render('search', {
             status: 200,
             title: 'Search',
             data: {
                 message: 'Search endpoint',
-                restaurants
+                restaurants: JSON.parse(JSON.stringify(allRestaurants)),
+                reviews: JSON.parse(JSON.stringify(allReviews))
             }
         })
     }

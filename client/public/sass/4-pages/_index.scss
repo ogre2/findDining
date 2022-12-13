@@ -8,7 +8,9 @@
     height: 100vh;
     width: 100%;
 }
-
+/*------------------------------------------------------------------
+[Features]
+------------------------------------------------------------------*/
 #features {
     background-color: $c-off-white;
     .section-content {
@@ -51,6 +53,136 @@
             &:hover {
                 // cursor: pointer;
                 box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.025);
+            }
+        }
+    }
+}
+/*------------------------------------------------------------------
+[Encryption]
+------------------------------------------------------------------*/
+#encryption {
+    background-color: $c-off-white;
+    .container-fluid {
+        .encryption-cards {
+            .card {
+                padding: 20px;
+                width: 325px;
+                border: 1px solid $c-grey;
+                .card-icon {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 26px;
+                    color: $c-ultrablue;
+                    background-color: $c-alice;
+                    margin-bottom: 10px;
+                }
+                .card-title {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $c-charcoal;
+                }
+                .card-text {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                &:hover {
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+    }
+}
+/*------------------------------------------------------------------
+[Google Maps]
+------------------------------------------------------------------*/
+#googleMaps {
+    .container-fluid {
+        .row {
+            .details {
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                padding-bottom: 0;
+                .details-icon {
+                    height: 80px;
+                    width: 95px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $c-ultrablue;
+                    font-size: 26px;
+                    background-color: $c-alice;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+                .details-text {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .details-title {
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: $c-charcoal;
+                    }
+                    .details-small {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $c-manatee;
+                    }
+                }
+                // &:not(:last-of-type) {
+                //     margin-bottom: 20px;
+                // }
+            }
+        }
+    }
+}
+/*------------------------------------------------------------------
+[Testimonials]
+------------------------------------------------------------------*/
+#testimonials {
+    background-color: $c-off-white;
+    .container-fluid {
+        .testimonials-area {
+            .carousel-inner {
+                .carousel-item {
+                    padding: 0 100px 0 210px;
+                    .carousel-item-row {
+                        padding: 20px 0;
+                        .testimonial-card {
+                            width: 400px;
+                            padding: 25px 10px;
+                            border: 1px solid $c-grey;
+                            .card-head {
+                                .card-avi {
+                                    border-radius: 100%;
+                                    height: 80px;
+                                    width: 80px;
+                                    @include coverFit;
+                                    margin-bottom: 10px;
+                                }
+                                .card-title {
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    color: $c-charcoal;
+                                }
+                            }
+                            .card-body {
+                                .card-star {
+                                    color: $c-yellow2;
+                                }
+                            }
+                            &:hover {
+                                box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                    }
+                }
             }
         }
     }

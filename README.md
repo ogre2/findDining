@@ -43,7 +43,7 @@ findDining/
 
 ## Quick Start
 
-You can view and interact with the the application on your browser by visiting [https://find-dining-app.herokuapp.com/](https://find-dining.herokuapp.com/).  
+You can view and interact with the the application on your browser by visiting [https://find-dining-app.herokuapp.com/](https://find-dining-app.herokuapp.com/).  
 
 ## Prerequisites
 

@@ -5,19 +5,80 @@
 [Header]
 ------------------------------------------------------------------*/
 #searchHeader {
-    min-height: 40vh;
+    height: 40vh;
     width: 100%;
-    padding: 50 0;
-    background-color: $c-off-white;
+    display: flex;
+    align-items: center;
     .container-fluid {
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        .jumbotron {
-            height: 100%;
-            width: 100%;
-            align-self: center;
-            justify-self: center;
+        .search-header-row {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            .search-header-content {
+                .search-heading,
+                .search-header-text {
+                    padding-left: 0;
+                } 
+                .search-header-text {
+                    .span {
+                        color: $c-ultrablue;
+                    }
+                }
+                .row {
+                    .header-form {
+                        background-color: $c-white;
+                        height: 85px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 5px;
+                        .search-form {
+                            width: 100%;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: center;
+                            .search-form-row {
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                .search-form-col {
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    .search-icon {
+                                        margin-right: 5px;
+                                        color: $c-ultrablue;
+                                    }
+                                    .form-input {
+                                        width: 100%;
+                                        border: 0;
+                                        box-shadow: none;
+                                        outline: none;
+                                    }
+                                    .btn-form {
+                                        padding: 10px 0;
+                                        width: 100px;
+                                        &.btn-form-clear {
+                                            color: $c-charcoal;
+                                            border: 1px solid $c-grey;
+                                            margin-right: 10px;
+                                        }
+                                        &.btn-form-search {
+                                            color: $c-white;
+                                            border: 1px solid transparent;
+                                            background-color: $c-ultrablue;
+                                        }
+                                    }
+                                    &:not(:last-of-type) {
+                                        border-right: 2px solid $c-grey;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -25,53 +86,71 @@
 [Search Results]
 ------------------------------------------------------------------*/
 #searchResults {
-    .results {
-        height: 100%;
-        width: 100%;
-        .card {
-            margin: 20px;
-            padding: 20px;
-            width: 500px;
-            .card-row {
+    .container-fluid {
+        .results-row {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            .results-area {
+                padding: 0;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
-                align-items: center;
-                .card-head {
-                    display: flex;
-                    align-items: center;
-                    .card-image {
-                        height: 80px;
-                        width: 80px;
-                        margin-right: 5px;
-                        .r-logo {
-                            @include fullSize;
-                            @include coverFit;
+                .result-card {
+                    width: 700px;
+                    height: 180px;
+                    padding: 20px;
+                    .card-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        background: transparent;
+                        border-bottom: 0;
+                        padding-left: 0;
+                        .r-details {
+                            display: flex;
+                            justify-content: space-between;
+                            .r-logo {
+                                height: 80px;
+                                width: 80px;
+                                border-radius: 100%;
+                                margin: 0 10px 0 0;
+                                .logo {
+                                    @include fullSize;
+                                    @include coverFit;
+                                    border-radius: 100%;
+                                }
+                            }
+                            .r-info {
+                                .card-title {
+                                    margin: 15px 0 0 0;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    color: $c-charcoal;
+                                }
+                            }
+                        }
+                        .open-maps {
+                            height: 50px;
+                            width: 50px;
+                            line-height: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            background-color: $c-ultrablue;
                             border-radius: 100%;
+                            .link {
+                                color: $c-white;
+                                height: inherit;
+                                width: inherit;
+                            }
                         }
                     }
-                    .card-head-text {
-                        .card-title {
-                            color: $c-charcoal;
-                            font-size: 18px;
-                            font-weight: 600;
-                        }
-                        .card-subtitle {
-                            color: $c-manatee;
-                            font-weight: 500;
-                        }
-                    }
-                }
-                .card-link {
-                    background-color: $c-ultrablue;
-                    height: 50px;
-                    width: 50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 100%;
-                    .card-icon {
-                        font-size: 18px;
-                        color: $c-white;
+                    &:not(:last-of-type) {
+                        margin-bottom: 20px;
                     }
                 }
             }

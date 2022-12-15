@@ -14,6 +14,7 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="/css/bootstrap.min.css" /> <!-- Bootstrap -->
+        <link rel="stylesheet" href="/aos/aos.css" /> <!-- AOS -->
         <link rel="stylesheet" href="/css/styles.css" /> <!-- Stylesheet -->
 
         <!-- Title & Favicon -->
@@ -31,7 +32,7 @@
 
     <body id="page-top" data-spy="scroll">
         <!-- Navbar -->
-        <navbar class="navbar navbar-expand-lg">
+        <navbar class="navbar navbar-expand-lg" data-aos="slide-down">
             <%- include('../includes/navbar.ejs') %>
         </navbar>
         <!-- /.navbar -->
@@ -54,4 +55,8 @@
         <script src="/popper/popper.min.js"></script>
         <!-- Bootstrap -->
         <script src="/js/bootstrap.min.js"></script>
+        <!-- AOS -->
+        <script src="/aos/aos.js"></script>
+        <!-- Main.js -->
+        <script src="/js/main.js"></script>
 </html>

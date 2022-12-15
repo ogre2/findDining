@@ -19,22 +19,39 @@ h1 {
 h2 {
     font-size: 62px;
 }
+h3 {
+    font-size: 48px;
+}
+h4 {
+    font-size: 40px;
+}
 h5 {
+    font-size: 32px;
+}
+h6 {
     font-size: 27px;
 }
 /*------------------------------------------------------------------
 [Paragraphs]
 ------------------------------------------------------------------*/
 p {
-    line-height: 36px;
-}
-.p {
-    &-header,
-    &-section-header {
-        font-size: 20px;
-    }
-    &-section-header {
-        color: $c-manatee;
+    &.body {
+        &-1 {
+            font-size: 20px;
+            line-height: 35px;
+        }
+        &-2 {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        &-3 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &-4 {
+            font-size: 14px;
+            line-height: 21px;
+        }
     }
 }
 /*------------------------------------------------------------------
@@ -51,31 +68,31 @@ ol {
 [Font Weights]
 ------------------------------------------------------------------*/
 .fw {
-    &-thing {
+    &-100 {
         font-weight: 100!important;
     }
-    &-ex-light {
+    &-200 {
         font-weight: 200!important;
     }
-    &-light {
+    &-300 {
         font-weight: 300!important;
     }
-    &-regular {
+    &-400 {
         font-weight: 400!important;
     }
-    &-medium {
+    &-500 {
         font-weight: 500!important;
     }
-    &-sm-bold {
+    &-600 {
         font-weight: 600!important;
     }
-    &-bold {
+    &-700 {
         font-weight: 700!important;
     }
-    &-ex-bold {
+    &-800 {
         font-weight: 800!important;
     }
-    &-black {
+    &-900 {
         font-weight: 900!important;
     }
 }
@@ -88,5 +105,39 @@ ol {
     }
     &-manatee {
         color: $c-manatee;
+    }
+    &-grey {
+        color: $c-grey;
+    }
+    &-cement {
+        color: $c-cement;
+    }
+    &-silver {
+        color: $c-silver;
+    }
+    &-yellow {
+        color: $c-yellow2;
+    }
+    &-black {
+        color: $c-black;
+    }
+    &-rblack {
+        color: $c-rich-black;
+    }
+    &-white {
+        color: $c-white;
+    }
+}
+/*------------------------------------------------------------------
+[Icons]
+------------------------------------------------------------------*/
+.fa-icon {
+    font-size: 26px;
+    line-height: 26px;
+    .icon-white {
+        color: $c-white;
+    }
+    .icon-blue {
+        color: $c-ultrablue;
     }
 }

@@ -1,263 +1,379 @@
 <!-- Header -->
-<header id="indexHeader">
-    <div class="container-fluid d-flex align-items-center h-100">
-        <!-- Row -->
-        <div class="row m-auto d-flex justify-content-center">
-            <!-- Header Content -->
-            <div class="col-md-7 text-center">
-                <h1 class="fw-bold text-charcoal m-b-30">We've changed how you find good food</h1>
-
-                <p class="col-md-11 m-auto fw-sm-bold p-header text-manatee">
-                    If you love food and love finding local spots to try out, look no further than the
-                    findDining web service. Powered by the latest in modern web development tools.
+<header id="indexHeader" class="bg-white">
+    <!-- Container -->
+    <div class="container-fluid m-auto">
+        <!-- Header Row -->
+        <div class="row header-row">
+            <!-- Jumbotron -->
+            <div class="jumbotron col-md-10">
+                <h1 class="fw-700 text-charcoal text-header">We've changed how you find good food</h1>
+                <p class="body-1 fw-600 text-manatee">
+                    If you love food and love finding local spots to try out, look no further than the findDining web service. Powered by the latest in modern web development tools.
                 </p>
-
-                <ul class="header-buttons m-t-30">
-                    <li class="header-button-item"><a href="/api/search" class="btn btn-primary">Get started</a></li>
-                    <li class="header-button-item"><a href="" class="btn btn-secondary">Learn more</a></li>
+                <!-- Header Links -->
+                <ul class="header-links">
+                    <li class="header-link-item"><a href="/search" class="link"><button class="btn btn-primary">Get started</button></a></li>
+                    <li class="header-link-item"><a href="/howitworks" class="link"><button class="btn btn-secondary">Learn more</button></a></li>
                 </ul>
+                <!-- /.header-links -->
             </div>
-            <!-- /.header-content -->
+            <!-- /.jumbotron -->
         </div>
-        <!-- /.row -->
+        <!-- /.header-row -->
     </div>
+    <!-- /.container -->
 </header>
 <!-- /.header -->
 
 <!-- Features Section -->
-<section id="features">
-    <div class="container-fluid d-flex flex-column">
+<section id="features" class="bg-owhite section">
+    <!-- Container -->
+    <div class="container-fluid m-auto">
         <!-- Section Header -->
-        <div class="row section-header ms-auto me-auto text-center d-flex flex-column align-items-center w-100 m-b-100">
-            <h2 class="col-md-4 fw-bold text-charcoal m-b-25">Simple and intuitive user features</h2>
-
-            <p class="col-md-4 fw-medium p-section-header text-silver">
-                findDining comes equipped with simple and useful features that make
-                finding what you’re looking for so much easier. 
-            </p>
+        <div class="row section-row section-header">
+            <!-- Header Content -->
+            <div class="section-header-content col-md-5">
+                <h2 class="section-heading fw-700 text-charcoal">Simple and intuitive user features</h2>
+                <p class="section-heading-text fw-600 body-1 text-manatee">
+                    findDining comes equipped with simple and useful features that make finding what you’re looking for so much easier.
+                </p>
+            </div>
+            <!-- /.header-content -->
         </div>
         <!-- /.section-header -->
 
         <!-- Section Content -->
-        <div class="row section-content m-auto w-100">
-            <div class="row w-100 m-auto d-flex justify-content-around">
+        <div class="row section-row section-content">
+            <!-- Features Area -->
+            <div class="features-area">
                 <!-- Card -->
-                <div class="col-md-3 card">
-                    <div class="card-body">
-                        <div class="card-body-icon">
-                            <i class="fa-sharp fa-solid fa-fw fa-hashtag"></i>
+                <div class="card feature-card">
+                    <!-- Card Head -->
+                    <div class="card-head">
+                        <div class="card-icon">
+                            <i class="fa-sharp fa-solid fa-fw fa-icon fa-hashtag"></i>
                         </div>
-                        <h5 class="card-title">Search by keyword</h5>
-                        <p class="card-text">
+                    </div>
+                    <!-- /.card-head -->
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <h5 class="card-title text-charcoal fw-700">Search by keyword</h5>
+                        <p class="card-text body-2">
                             Keyword based search functionality and filter enables you to find what you are looking for quickly.
                         </p>
-                        <a href="" class="card-link">Learn more<i class="fa-sharp fa-solid fa-fw fa-arrow-right"></i></a>
+
+                        <a href="/features" class="link inline-link feature-link">
+                            Learn more<i class="fa-solid fa-sharp link-icon fa-fw fa-arrow-right"></i>
+                        </a>
                     </div>
+                    <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
+
                 <!-- Card -->
-                <div class="col-md-3 card">
-                    <div class="card-body">
-                        <div class="card-body-icon">
-                            <i class="fa-sharp fa-solid fa-fw fa-magnifying-glass"></i>
+                <div class="card feature-card">
+                    <!-- Card Head -->
+                    <div class="card-head">
+                        <div class="card-icon">
+                            <i class="fa-sharp fa-solid fa-fw fa-icon fa-filter"></i>
                         </div>
-                        
-                        <h5 class="card-title">Result filtering</h5>
-                        <p class="card-text">
+                    </div>
+                    <!-- /.card-head -->
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <h5 class="card-title text-charcoal fw-700">Result filtering</h5>
+                        <p class="card-text body-2">
                             Don’t get overwhelmed by a the large amount of search results, use our filter functionality to focus your results.
                         </p>
-                        <a href="" class="card-link">Learn more<i class="fa-sharp fa-solid fa-fw fa-arrow-right"></i></a>
+
+                        <a href="/features" class="link inline-link feature-link">
+                            Learn more<i class="fa-solid fa-sharp link-icon fa-fw fa-arrow-right"></i>
+                        </a>
                     </div>
+                    <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
+
                 <!-- Card -->
-                <div class="col-md-3 card">
-                    <div class="card-body">
-                        <div class="card-body-icon">
-                            <i class="fa-solid fa-fw fa-location-dot"></i>
+                <div class="card feature-card">
+                    <!-- Card Head -->
+                    <div class="card-head">
+                        <div class="card-icon">
+                            <i class="fa-sharp fa-solid fa-fw fa-icon fa-location-dot"></i>
                         </div>
-                        <h5 class="card-title">Open in Google Maps</h5>
-                        <p class="card-text">
+                    </div>
+                    <!-- /.card-head -->
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <h5 class="card-title text-charcoal fw-700">Open in Google Maps</h5>
+                        <p class="card-text body-2">
                             Found a food spot you’d like to try? Find out how close or far you are through Google Maps with one click.
                         </p>
-                        <a href="" class="card-link">Learn more<i class="fa-sharp fa-solid fa-fw fa-arrow-right"></i></a>
+
+                        <a href="/features" class="link inline-link feature-link">
+                            Learn more<i class="fa-solid fa-sharp link-icon fa-fw fa-arrow-right"></i>
+                        </a>
                     </div>
+                    <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
             </div>
+            <!-- /.features-area -->
         </div>
         <!-- /.section-content -->
     </div>
+    <!-- /.container -->
 </section>
 <!-- /.features-section -->
 
 <!-- Highlights Section -->
-<section id="highlightSection">
-    <div class="container-fluid">
-        <div class="row d-flex col-md-9 justify-content-center align-items-center m-auto">
-            <div class="col-md-5 title-section text-right p-r-0">
-                <h2 class="fw-bold text-charcoal">Find food spots hassle free</h2>
-                <p class="fw-medium text-manatee col-md-10">
-                    findDining allows you to find what you’re looking for through quick search functionality. Search by keywords,
-                    cuisine, and more to find the next food spot
-                </p>
-                <a href="#" class="link"><button class="btn btn-primary">Get Started</button></a>
+<section id="highlights" class="bg-white section">
+    <!-- Container -->
+    <div class="container-fluid m-auto">
+        <!-- Section Content -->
+        <div class="row section-row section-content">
+            <!-- Highlights Area -->
+            <div class="highlights-area">
+                <!-- Highlights Row -->
+                <div class="highlights-row">
+                    <!-- Text Column -->
+                    <div class="highlights-text col-h">
+                        <h2 class="fw-700 text-charcoal col-header">Find food spots hassle free</h2>
+
+                        <p class="body-2 fw-500 text-manatee col-text">
+                            findDining allows you to find what you’re looking for through quick search functionality. Search by keywords,
+                            cuisine, and more to find the next food spot.
+                        </p>
+
+                        <a href="#" class="link"><button class="btn btn-primary">Get started</button></a>
+                    </div>
+                    <!-- /.text-column -->
+
+                    <!-- Image Column -->
+                    <div class="highlights-image col-h">
+                        <img src="/img/card-img.png" alt="" class="h-img" draggable="false">
+                    </div>
+                    <!-- /.image-column -->
+                </div>
+                <!-- /.highlights-row -->
+
+                <!-- Highlights Row -->
+                <div class="highlights-row">
+                    <!-- Image Column -->
+                    <div class="highlights-image col-h">
+                        <img src="/img/card-img.png" alt="" class="h-img" draggable="false">
+                    </div>
+                    <!-- /.image-column -->
+
+                    <!-- Text Column -->
+                    <div class="highlights-text col-h">
+                        <h2 class="fw-700 text-charcoal col-header">Built using modern web tools</h2>
+
+                        <p class="body-2 fw-500 text-manatee col-text">
+                            Our web app is built on the latest in web development technology, giving you fast and secure access, and a
+                            seamless user experience across all web capable devices
+                        </p>
+
+                        <a href="#" class="link"><button class="btn btn-secondary">Learn more</button></a>
+                    </div>
+                    <!-- /.text-column -->
+                </div>
+                <!-- /.highlights-row -->
             </div>
-            <div class="col-md-6 image-side text-center">
-                <img src="/img/card-img.png" alt="">
-            </div>
+            <!-- /.highlights-area -->
         </div>
-        <div class="spacer w-100 p-t-50 p-b-50"></div>
-        <div class="row d-flex col-md-9 justify-content-center align-items-center m-auto">
-            <div class="col-md-6 image-side p-l-0 text-center">
-                <img src="/img/card-img.png" alt="">
-            </div>
-            <div class="col-md-5 title-section text-left p-l-0">
-                <h2 class="fw-bold text-charcoal">Built using modern web tools</h2>
-                <p class="fw-medium text-manatee col-md-10">
-                    findDining allows you to find what you’re looking for through quick search functionality. Search by keywords,
-                    cuisine, and more to find the next food spot
-                </p>
-                <a href="#" class="link"><button class="btn btn-secondary">Learn More</button></a>
-            </div>
-        </div>
+        <!-- /.section-content -->
     </div>
+    <!-- /.container -->
 </section>
 <!-- /.highlights-section -->
 
-<!-- Encryption -->
-<section id="encryption">
+<!-- Extras -->
+<section id="extras" class="section bg-owhite">
+    <!-- Container -->
     <div class="container-fluid m-auto">
-        <div class="row d-flex col-md-9 justify-content-between align-items-center m-auto">
-            <div class="col-md-6 encryption-cards">
-                <div class="row d-flex justify-content-around m-b-25">
-                    <div class="card col-md-5 d-flex justify-content-start">
-                        <div class="card-icon"><i class="far fa-solid fa-lock fa-fw"></i></div>
-                        <h5 class="card-title">Encryption</h5>
-                        <p class="card-text">
-                            Keyword based search functionality and filter enables you to find 
-                        </p>
+        <!-- Section Content -->
+        <div class="row section-row section-content">
+            <!-- Extras Area -->
+            <div class="extras-area">
+                <!-- Column -->
+                <div class="col-e col-left">
+                    <!-- Extras Column Row -->
+                    <div class="row extras-col-row">
+                        <!-- Card -->
+                        <div class="card extra-card">
+                            <!-- Card Head -->
+                            <div class="card-head">
+                                <div class="card-icon"><i class="fa-icon fa-fw fa-solid fa-bookmark"></i></div>
+                            </div>
+                            <!-- /.card-head -->
+
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <h5 class="card-title text-charcoal fw-600">Modern UI</h5>
+
+                                <p class="card-text text-manatee fw-400 body-3">
+                                    Minimal and modern user interface design, focused on userbility above all.
+                                </p>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+                        <!-- Card -->
+                        <div class="card extra-card">
+                            <!-- Card Head -->
+                            <div class="card-head">
+                                <div class="card-icon"><i class="fa-icon fa-fw fa-solid fa-mobile-alt"></i></div>
+                            </div>
+                            <!-- /.card-head -->
+
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <h5 class="card-title text-charcoal fw-600">Mobile Friendly</h5>
+
+                                <p class="card-text text-manatee fw-400 body-3">
+                                    findDining is built with mobile view experiences like smart phones in mind
+                                </p>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
                     </div>
-                    <div class="card col-md-5 d-flex justify-content-start">
-                        <div class="card-icon"><i class="far fa-solid fa-lock fa-fw"></i></div>
-                        <h5 class="card-title">Encryption</h5>
-                        <p class="card-text">
-                            Keyword based search functionality and filter enables you to find 
-                        </p>
+                    <!-- /.extras-column-row -->
+
+                    <!-- Extras Column Row -->
+                    <div class="row extras-col-row">
+                        <!-- Card -->
+                        <div class="card extra-card">
+                            <!-- Card Head -->
+                            <div class="card-head">
+                                <div class="card-icon"><i class="fa-icon fa-fw fa-solid fa-calendar-alt"></i></div>
+                            </div>
+                            <!-- /.card-head -->
+
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <h5 class="card-title text-charcoal fw-600">Up to Date</h5>
+
+                                <p class="card-text text-manatee fw-400 body-3">
+                                    Our database is constantly updated to ensure up to date information is served
+                                </p>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+                        <!-- Card -->
+                        <div class="card extra-card">
+                            <!-- Card Head -->
+                            <div class="card-head">
+                                <div class="card-icon"><i class="fa-icon fa-fw fa-solid fa-clock"></i></div>
+                            </div>
+                            <!-- /.card-head -->
+
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <h5 class="card-title text-charcoal fw-600">24/7</h5>
+
+                                <p class="card-text text-manatee fw-400 body-3">
+                                    findDining is available all day and night, ready for you to start searching
+                                </p>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
                     </div>
+                    <!-- /.extras-column-row -->
                 </div>
-                <div class="row d-flex justify-content-around">
-                    <div class="card col-md-5 d-flex justify-content-start">
-                        <div class="card-icon"><i class="far fa-solid fa-lock fa-fw"></i></div>
-                        <h5 class="card-title">Encryption</h5>
-                        <p class="card-text">
-                            Keyword based search functionality and filter enables you to find 
-                        </p>
-                    </div>
-                    <div class="card col-md-5 d-flex justify-content-start">
-                        <div class="card-icon"><i class="far fa-solid fa-lock fa-fw"></i></div>
-                        <h5 class="card-title">Encryption</h5>
-                        <p class="card-text">
-                            Keyword based search functionality and filter enables you to find 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5 title-section text-left p-l-0 p-r-50 encryption-text">
-                <div class="row">
-                    <h2 class="fw-bold text-charcoal">Find food spots hassle free</h2>
-                    <p class="fw-medium text-manatee col-md-10">
+                <!-- /.column -->
+
+                <!-- Column -->
+                <div class="col-e col-right">
+                    <h2 class="fw-700 text-charcoal col-header">Find food spots hassle free</h2>
+
+                    <p class="body-2 fw-500 text-manatee col-text">
                         findDining allows you to find what you’re looking for through quick search functionality. Search by keywords,
                         cuisine, and more to find the next food spot
                     </p>
+
+                    <a href="/search" class="link"><button class="btn btn-primary">Get started</button></a>
                 </div>
-                
-                <a href="#" class="link"><button class="btn btn-secondary">Learn More</button></a>
+                <!-- /.column -->
             </div>
+            <!-- /.extras-area -->
         </div>
+        <!-- /.section-content -->
     </div>
+    <!-- /.container -->
 </section>
-<!-- /.encryption -->
+<!-- /.extras -->
 
 <!-- Google Maps -->
-<section id="googleMaps">
+<section id="googleMaps" class="section bg-white">
+    <!-- Container -->
     <div class="container-fluid m-auto">
-        <!-- Row -->
-        <div class="row d-flex col-md-9 justify-content-center align-items-center m-auto">
-            <div class="col-md-6 image-side p-l-0 text-center">
-                <img src="/img/google-maps.png" alt="">
-            </div>
-            <div class="col-md-6 title-section text-left p-l-0">
-                <div class="row">
-                    <h2 class="fw-bold text-charcoal">Google Maps integration</h2>
-                    <p class="fw-medium text-manatee col-md-10">
-                        Our web app is built on the latest in web development technology, giving you fast and secure access, and a 
-                        seamless user experience across all web capable devices
-                    </p>
+        <!-- Section Content -->
+        <div class="row section-content section-row">
+            <!-- Maps Area -->
+            <div class="maps-area">
+                <!-- Column -->
+                <div class="col-md-6 col-left">
+                    <img src="/img/google-maps.png" alt="Google Maps card">
                 </div>
-                <div class="row">
-                    <div class="details d-flex justify-content-start align-items-center">
-                        <div class="details-icon">
-                            <i class="fa-sharp fa-solid fa-hashtag fa-fw"></i>
-                        </div>
-                        <div class="details-text">
-                            <h6 class="details-title">Search by keyword</h6>
-                            <p class="col-md-9 details-small">Keyword based search functionality and filter enables you to find what you are looking for quickly.</p>
-                        </div>
-                    </div>
-                    <div class="details d-flex justify-content-start align-items-center">
-                        <div class="details-icon">
-                            <i class="fa-sharp fa-solid fa-hashtag fa-fw"></i>
-                        </div>
-                        <div class="details-text">
-                            <h6 class="details-title">Search by keyword</h6>
-                            <p class="col-md-9 details-small">Keyword based search functionality and filter enables you to find what you are looking for quickly.</p>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="link"><button class="btn btn-secondary">Learn More</button></a>
-            </div>
-        </div>
-        <!-- /.row -->
+                <!-- /.column -->
 
-        <!-- Row -->
-        <div class="row d-flex col-md-9 justify-content-center align-items-center m-auto">
-            <div class="col-md-6 title-section text-left p-l-0">
-                <div class="row">
-                    <h2 class="fw-bold text-charcoal">Google Maps integration</h2>
-                    <p class="fw-medium text-manatee col-md-10">
-                        Our web app is built on the latest in web development technology, giving you fast and secure access, and a 
+                <!-- Column -->
+                <div class="col-md-6 col-right">
+                    <h2 class="fw-700 text-charcoal col-header">Google Maps integration</h2>
+
+                    <p class="body-2 fw-500 text-manatee col-text">
+                        Our web app is built on the latest in web development technology, giving you fast and secure access, and a
                         seamless user experience across all web capable devices
                     </p>
-                </div>
-                <div class="row">
-                    <div class="details d-flex justify-content-end align-items-center">
-                        <div class="details-icon">
-                            <i class="fa-sharp fa-solid fa-hashtag fa-fw"></i>
+
+                    <!-- Details Row -->
+                    <div class="d-row">
+                        <div class="row-icon">
+                            <i class="fa-solid fa-magnifying-glass fa-fw fa-icon"></i>
                         </div>
-                        <div class="details-text">
-                            <h6 class="details-title">Search by keyword</h6>
-                            <p class="col-md-9 details-small">Keyword based search functionality and filter enables you to find what you are looking for quickly.</p>
-                        </div>
-                    </div>
-                    <div class="details d-flex justify-content-end align-items-center">
-                        <div class="details-icon">
-                            <i class="fa-sharp fa-solid fa-hashtag fa-fw"></i>
-                        </div>
-                        <div class="details-text">
-                            <h6 class="details-title">Search by keyword</h6>
-                            <p class="col-md-9 details-small">Keyword based search functionality and filter enables you to find what you are looking for quickly.</p>
+                        <div class="row-text">
+                            <h6 class="row-text-header">Find your restaurant</h6>
+
+                            <p class="row-text-small">
+                                Use our search functionality to find restaurants and filter to narrow down the one you’d like to try.
+                            </p>
                         </div>
                     </div>
+                    <!-- /.details-row -->
+
+                    <!-- Details Row -->
+                    <div class="d-row">
+                        <div class="row-icon">
+                            <i class="fa-solid fa-map fa-fw fa-icon"></i>
+                        </div>
+                        <div class="row-text">
+                            <h6 class="row-text-header">On demand directions</h6>
+
+                            <p class="row-text-small">
+                                Open the restaurant location with Google Maps and get on demand directions.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.details-row -->
+
+                    <a href="#" class="link inline-link">Learn more<i class="fa-solid fa-sharp fa-arrow-right link-icon fa-fw fa-icon"></i></a>
                 </div>
-                <a href="#" class="link"><button class="btn btn-secondary">Learn More</button></a>
+                <!-- /.column -->
             </div>
-            <div class="col-md-6 image-side p-l-0 text-center">
-                <img src="/img/google-maps.png" alt="">
-            </div>
+            <!-- /.maps-area -->
         </div>
-        <!-- /.row -->
+        <!-- /.section-content -->
     </div>
+    <!-- /.container -->
 </section>
 <!-- /.google-maps -->
 

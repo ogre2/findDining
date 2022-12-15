@@ -17,6 +17,8 @@ button {
     border: 0px;
     outline: none !important;
     font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
     &:hover,
     &:focus,
     &:active,
@@ -31,6 +33,7 @@ button {
 .btn-primary:focus {
     color: $c-white;
     background-color: $c-ultrablue !important;
+    border: 1px solid transparent;
 }
 .btn-secondary,
 .btn-secondary:hover,
@@ -39,6 +42,7 @@ button {
 .btn-secondary:focus {
     color: $c-ultrablue;
     background-color: $c-alice !important;
+    border: 1px solid transparent;
 }
 .btn-alternate,
 .btn-alternate:hover,
@@ -47,4 +51,47 @@ button {
 .btn-alternate:focus {
     color: $c-ultrablue;
     background-color: $c-white;
+    border: 1px solid transparent;
+}
+.btn-white,
+.btn-white:hover,
+.btn-white:active,
+.btn-white:visited,
+.btn-white:focus {
+    color: $c-charcoal;
+    background-color: $c-white;
+    border: 1.5px solid $c-grey;
+}
+.btn {
+    .icon {
+        margin-left: 5px;
+    }
+}
+/*------------------------------------------------------------------
+[Input Buttons]
+------------------------------------------------------------------*/
+input[type="button"],
+input[type="submit"] {
+    cursor: pointer;
+    padding: 16px 40px;
+    border: 0px;
+    outline: none !important;
+    font-weight: 600;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+input[type="button"] {
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        outline: none !important;
+    }
+}
+input[type="submit"] {
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        outline: none !important;
+    }
 }

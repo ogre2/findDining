@@ -29,8 +29,8 @@ const RestaurantSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    cuising: {
-        type: String,
+    cuisine: {
+        type: [String],
         required: true
     },
     grades: {

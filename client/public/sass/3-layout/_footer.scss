@@ -7,9 +7,22 @@
 footer {
     &.main-footer {
         margin-top: auto;
-        .row {
-            &:not(:last-child) {
-                margin-bottom: 20px !important;
+        .footer-row {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            .cta-area {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 15px;
+                padding: 30px 350px;
+                margin-bottom: 20px;
+                .link {
+                    margin-top: 30px;
+                }
             }
             .footer-brand {
                 font-size: 24px;
@@ -40,20 +53,8 @@ footer {
                     }
                 }
             }
-            .footer-text {
-                margin-top: -10px !important; 
-            }
-        }
-        .cta-area {
-            margin-bottom: 50px;
-            .cta {
-                height: 200px;
-                color: $c-white;
-                background-color: $c-ultrablue;
-                border-radius: 20px;
-                .cta-text {
-                    margin-bottom: 20px;
-                }
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
             }
         }
     }

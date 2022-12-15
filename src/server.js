@@ -21,6 +21,12 @@ const layouts = require('express-ejs-layouts')
 const indexRouter = require('./routes/index.router')
 // Importing search router
 const searchRouter = require('./routes/search.router')
+// Importing results router
+const resultsRouter = require('./routes/results.router')
+// Importing results router
+const howRouter = require('./routes/how.router')
+// Importing features router
+const featuresRouter = require('./routes/features.router')
 
 // Enabling colors
 config.colors.enable()
@@ -48,6 +54,8 @@ app.use(express.json({ extended: true }))
 app.use('/jquery', express.static(path.resolve(__dirname, '../node_modules/jquery/dist/')))
 // Linking Popper
 app.use('/popper', express.static(path.resolve(__dirname, '../node_modules/@popperjs/core/dist/umd/')))
+// Linking AOS
+app.use('/aos', express.static(path.resolve(__dirname, '../node_modules/aos/dist/')))
 // Linking Bootstrap
 app.use(express.static(path.resolve(__dirname, '../node_modules/bootstrap/dist/')))
 // Linking public files
@@ -57,6 +65,12 @@ app.use(express.static(path.resolve(__dirname, '../client/public')))
 app.use('/', indexRouter)
 // Enabling search router
 app.use('/api', searchRouter)
+// Enabling results router
+app.use('/api', resultsRouter)
+// Enabling how it works router
+app.use('/api', howRouter)
+// Enabling features router
+app.use('/api', featuresRouter)
 
 /**
  * Starting the backend server

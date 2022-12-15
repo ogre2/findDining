@@ -7,14 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2022-12-14
+
+### Added
+
+- Added project folder structure diagram in README file.
+
+### Changes
+
+- Fixed API endpoints section.
+
 ## [1.1.0] - 2022-12-14
 
-## Added
+### Added
 
 - Added how it works page.
 - Added features page.
 
-## Changes
+### Changes
 
 - Fixed home page.
 - Fixed release links in CHANGELOG file.
@@ -220,7 +230,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [README.md](https://github.com/ogre2/findDining/blob/main/README.md) file, with skeleton project details.
 - [.gitignore](https://github.com/ogre2/findDining/blob/main/.gitignore) file.
 
-[Unreleased]: https://github.com/ogre2/findDining/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/ogre2/findDining/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/ogre2/findDining/compare/v1.1.1...v1.1.0
 [1.1.0]: https://github.com/ogre2/findDining/compare/v1.1.0...v1.0.9
 [1.0.9]: https://github.com/ogre2/findDining/compare/v1.0.9...v1.0.8
 [1.0.8]: https://github.com/ogre2/findDining/compare/v1.0.8...v1.0.7
